@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="jeee2-transformed.ico" type="image/x-icon">
+    <title>Minimalist Donation Page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+        }
+
+        /* Top Bar */
+        .topbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            max-width: 1200px;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            border-radius: 0 0 10px 10px;
+            z-index: 10;
+        }
+
+        /* Donation Icons */
+        .donations {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .donations a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            transition: transform 0.2s ease;
+        }
+
+        .donations a:hover {
+            transform: scale(1.15);
+        }
+
+        /* Download Button */
+        .download-btn {
+            padding: 0.5rem 1.5rem;
+            background-color: #0088cc;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .download-btn:hover {
+            background-color: #006bb3;
+        }
+
+        /* Main Content */
+        .content {
+            max-width: 800px;
+            padding: 8rem 2rem 2rem; /* Offset for the fixed topbar */
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .text-content {
+            max-width: 600px;
+            margin-bottom: 2rem;
+        }
+
+        /* Centered Image */
+        .image-container img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .solytext{
+            font-family: "Raleway", sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="topbar">
+        <!-- Donation Icons -->
+        <div class="donations">
+            <!-- Discord Icon -->
+            <a href="https://discord.com" target="_blank">
+                <img src="https://simpleicons.org/icons/discord.svg" alt="Discord" width="32" height="32">
+            </a>
+            <!-- Bitcoin Icon -->
+            <a id="bit" href="">
+                <img src="https://simpleicons.org/icons/bitcoin.svg" alt="Bitcoin" width="32" height="32">
+            </a>
+            
+            
+            <!-- PayPal Icon -->
+            <a href="https://paypal.me/SolyDonation" target="_blank">
+                <img src="https://simpleicons.org/icons/paypal.svg" alt="PayPal" width="32" height="32">
+            </a>
+        </div>
+        <!-- Download Button -->
+        <a href="#" class="download-btn">Download</a>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="content">
+        <!-- Text Content -->
+        <div class="text-content">
+            <h1>Soly</h1>
+            <p class="solytext">Soly is a super lightweight white Roblox executor, free to download and no fees at all! Auto inject, Open, Save, Inject, Execute functions! Really easy executor and recommended for beginners!</p>
+        </div>
+        <!-- Centered Image Container -->
+        <div class="image-container">
+            <img src="Soly.png" alt="Placeholder Image" style="scale: 2.5; position: relative; top: 125px;">
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    let bitcoin = document.getElementById("bit")
+
+    bitcoin.addEventListener("click", () => {
+        prompt("Bitcoin wallet: bc1q6k8dc2us29ra0p4j3glec4lxu3mdxy3qkrf7gx\n                                        Thank you! :D", "bc1q6k8dc2us29ra0p4j3glec4lxu3mdxy3qkrf7gx")
+    })
+</script>
